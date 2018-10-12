@@ -79,6 +79,7 @@ class Main
             ar3[i]=ar1[i];
             ar3[i+ar1.length]=ar1[i];
         }
+        
         for (int i=0;i<ar3.length;i++)
             System.out.println("ar3["+i+"] = "+ar3[i]);
         
@@ -103,7 +104,23 @@ class Main
          *          the indices are multiples of 3
          *         
          */
+        System.out.println("** 2nd to (n-1)th elements of ar1 **");
+        for (int i=1;i<(n-1);i++)
+            System.out.println("ar1["+i+"] = "+ar1[i]);
+            
+        System.out.println("** odd number of ar1 **");
+        for (int i=0;i<n;i++)
+        {
+            if (i%2==1)
+              System.out.println("ar1["+i+"] = "+ar1[i]);
+        }
         
+        System.out.println("** indices are multiples of 3 in ar1 **");
+        for (int i=0;i<n;i++)
+        {
+            if (i%3==0)
+              System.out.println("ar1["+i+"] = "+ar1[i]);
+        }
         /*
          * Task 7.  For each element in ar1, 
          *          If the element is even: leave alone
@@ -115,7 +132,16 @@ class Main
          *          ar[2]=30
          *          ar[3]=4
          */
-        
+        System.out.println("** change in odd in ar1 **");
+        for (int i=0;i<n;i++)
+        {
+            if (ar1[i]%2==1)
+                ar1[i]*=10;
+            System.out.println("ar1["+i+"] = "+ar1[i]);
+        }
+           //recover array ar1
+        for (int i=0;i<n;i++)
+            ar1[i]=i;
          /*
           * Task 8
           *    Create an array called ar2odds
