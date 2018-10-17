@@ -171,7 +171,22 @@ class Main
          * have.  Then create an ew array called ar4.  Copy just the odd
          * numbers from ar1 into ar4.  Print ar4
          */
-        
+        int oddar2=0;
+        for (int i=0;i<ar2.length;i++)
+        {
+            if (ar2[i]%2==1)
+                oddar2++;
+            }
+        int[] ar4=new int[oddar2];
+        int count=0;
+        for (int i=0;i<ar2.length;i++)
+        {
+            if(ar2[i]%2==1)
+                {
+                    ar4[count]=ar2[i];
+                    count++;
+                }
+            }
         /*
          * Task 10.  Shift the elements of ar4 right by 1
          * For example
