@@ -187,6 +187,10 @@ class Main
                     count++;
                 }
             }
+        for (int i=0; i<ar4.length;i++)
+        {
+            System.out.println("ar4["+i+"] = "+ar4[i]);
+        }
         /*
          * Task 10.  Shift the elements of ar4 right by 1
          * For example
