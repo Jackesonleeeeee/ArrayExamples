@@ -171,6 +171,7 @@ class Main
          * have.  Then create an ew array called ar4.  Copy just the odd
          * numbers from ar1 into ar4.  Print ar4
          */
+        System.out.println("Task 9");
         int oddar2=0;
         for (int i=0;i<ar2.length;i++)
         {
@@ -197,12 +198,37 @@ class Main
          * old   ar4: 1 3 5 7 9
          * new   ar4  9 1 3 5 7
          */
+        System.out.println("Task 10");
         
-        
+        int[] ar4c=new int[ar4.length];
+        for (int i=0;i<ar4.length;i++)
+            {
+                ar4c[i]=ar4[i];
+            }
+        for (int i=0;i<ar4.length-1;i++)
+            {
+                ar4[i+1]=ar4c[i];
+            }
+            ar4[0]=ar4c[ar4c.length-1];
+            for (int i=0; i<ar4.length;i++)
+        {
+            System.out.println("ar4["+i+"] = "+ar4[i]);
+        }
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
-        
+        System.out.println("task 11");
+        int[] ar2c=new int[ar2.length];
+        for (int i=0;i<ar2.length;i++)
+            {
+                ar2c[i]=ar2[i];
+            }
+        for (int i=0;i<ar2.length;i++)
+        {
+            ar2[i]=ar2c[ar2.length-1-i];
+        }
+        for (int i=0;i<ar2.length;i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
         
         /*
          * Task 12: 
