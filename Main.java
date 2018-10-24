@@ -253,7 +253,11 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
-        
+        String[] ar5={"Four","score","and","seven","years","ago","our",
+        "fathers","brought","forth","on","this","continent","a","new","nation"};
+        int[] ar6=new int[ar5.length];
+        for (int i=0;i<ar5.length;i++)
+            
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
