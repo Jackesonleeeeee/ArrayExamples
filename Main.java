@@ -253,11 +253,17 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
+        System.out.println("task 12");
         String[] ar5={"Four","score","and","seven","years","ago","our",
         "fathers","brought","forth","on","this","continent","a","new","nation"};
         int[] ar6=new int[ar5.length];
+        int five=0;
         for (int i=0;i<ar5.length;i++)
-            
+            {
+                if (ar5[i].length()>5)
+                    five++;
+                }
+        System.out.println(five);
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
@@ -272,7 +278,12 @@ class Main
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
-        
+        System.out.println("task 13");
+        String[] monsterArray={"Cookie", "Grover", "Oscar the Grouch", "Elmo", "Rosita"};
+        for (int i =0;i<monsterArray.length;i++)
+        {
+            System.out.println("vowel "+monsterArray[i]);
+        }
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
@@ -288,7 +299,27 @@ class Main
           *      So arindex[0]=2
           *         arindex[1]=5
           */
-         
+         System.out.println("Task 14");
+         int[] arx=new int[94-3+1];
+         int eee=0;
+         for (int i=0;i<arx.length;i++)
+         {
+            arx[i]=i+3;
+            if (arx[i]%3==0)
+            eee++;
+         }
+         int[] arindex=new int[eee];
+         int ee=0;
+         for (int i=0;i<arx.length;i++)
+         {
+            if (arx[i]%3==0)
+            {
+                arindex[ee]=i;
+                ee++;
+            }
+         }
+         for (int i=0; i<arindex.length;i++)
+             System.out.println("arindex["+i+"] = "+arindex[i]);
          /*
           * Create an arrary called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
