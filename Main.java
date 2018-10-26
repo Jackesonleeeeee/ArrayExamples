@@ -293,7 +293,7 @@ class Main
                     character=='u')
                     check++;
             }
-            if (check<0)
+            if (check>0)
                 System.out.println("monsterArray["+i+"] = "+monsterArray[i]);
         }
          /*
