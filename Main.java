@@ -282,17 +282,15 @@ class Main
         String[] monsterArray={"Cookie", "Grover", "Oscar the Grouch", "Elmo", "Rosita"};
         for (int i =0;i<monsterArray.length;i++)
         {   
-            int check=0;
-            for (int index=0; index<monsterArray[i].length();index++)
-            {   
-                char character=monsterArray[i].toLowerCase().charAt(index);
+            int check=0; 
+            char character=monsterArray[i].toLowerCase().charAt(0);
                 if (character=='a'||
                     character=='e'||
                     character=='i'||
                     character=='o'||
                     character=='u')
                     check++;
-            }
+            
             if (check>0)
                 System.out.println("monsterArray["+i+"] = "+monsterArray[i]);
         }
@@ -341,10 +339,13 @@ class Main
           * fb[3]=fb[1]+fb[2]
           * fb[4]=fb[2]+fb[3]
           */
+        System.out.println("Task final");
         int[] fb=new int[10];
         fb[0]=1;
         fb[1]=1;
         for (int i =2;i<10;i++)
             fb[i]=fb[i-1]+fb[i-2];
+        for (int i=0;i<10;i++)
+        System.out.println("fb["+i+"] ="+fb[i]);
     }
 }
