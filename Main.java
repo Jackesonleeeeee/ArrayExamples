@@ -280,10 +280,10 @@ class Main
          */
         System.out.println("task 13");
         String[] monsterArray={"Cookie", "Grover", "Oscar the Grouch", "Elmo", "Rosita"};
-        for (int i =0;i<monsterArray.length;i++)
+        for (String i :monsterArray)
         {   
             int check=0; 
-            char character=monsterArray[i].toLowerCase().charAt(0);
+            char character=i.toLowerCase().charAt(0);
                 if (character=='a'||
                     character=='e'||
                     character=='i'||
@@ -292,7 +292,7 @@ class Main
                     check++;
             
             if (check>0)
-                System.out.println("monsterArray["+i+"] = "+monsterArray[i]);
+                System.out.println(i);
         }
          /*
           * Task 14
